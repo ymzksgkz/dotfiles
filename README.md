@@ -1,7 +1,7 @@
 # PC Settings
 
-## DONE
-** Neovim
+**DONE**
+    - Neovim
 
-## TODO
-** .zshrc
+**TODO**
+    - .zshrc
