@@ -1,12 +1,7 @@
 # dotfiles
 
-
-**DONE**
-- Neovim
-
-**TODO**
+**NEXT**
 - .zshrc
-- brew
 
 
 ---
