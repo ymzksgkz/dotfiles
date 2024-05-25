@@ -25,5 +25,5 @@ require("lazy").setup("plugins", {
   },
 })
 
-
 require("options")
+require("settings.toggleterm")
