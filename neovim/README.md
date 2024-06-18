@@ -5,7 +5,7 @@ make install
 
 ## How to use
 ```bash
-alias nvim="NVIM_APPNAME=ymzksgkz nvim"
+alias nvim="NVIM_APPNAME=<your_name> nvim"
 nvim your_file_name
 ```
 
@@ -18,3 +18,10 @@ make uninstall
 ```bash
 make reinstall
 ```
+
+## Setup Github Copilot
+```bash
+# nvim command
+:Copilot setup
+```
+
