@@ -2,6 +2,7 @@
 
 **NEXT**
 - .zshrc
+- other...
 
 
 ---
