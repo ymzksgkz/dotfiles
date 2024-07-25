@@ -1,23 +1,37 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-vim.opt.termguicolors = true
-vim.opt.number = true
-vim.opt.showmatch = true
-vim.opt.splitright = true
-vim.opt.splitbelow = true
-vim.opt.autowrite = true
-vim.opt.autochdir = true
-vim.opt.mouse = 'a'
-vim.opt.clipboard = 'unnamedplus'
-vim.opt.swapfile = false
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.completeopt = 'menuone,noinsert,noselect'
-vim.opt.undofile = true
-vim.opt.undodir = vim.fn.stdpath("data") .. "undo"
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.autoindent = true
-vim.opt.wrap = true
+
+-- vim.opt.~~~ を set.~~~ と書けるようにする
+local set = vim.opt
+
+if vim.api.nvim_buf_get_option(0, 'modifiable') then
+  vim.scriptencoding = 'utf-8'
+  set.encoding = 'utf-8'
+  set.fileencoding = 'utf-8'
+end
+
+set.termguicolors = true
+set.number = true
+set.showmatch = true
+set.splitright = true
+set.splitbelow = true
+set.autowrite = true
+set.autochdir = true
+set.mouse = 'a'
+set.clipboard = 'unnamedplus'
+set.swapfile = false
+set.ignorecase = true
+set.smartcase = true
+set.completeopt = 'menuone,noinsert,noselect'
+set.undofile = true
+set.undodir = vim.fn.stdpath("data") .. "undo"
+set.expandtab = true
+set.shiftwidth = 2
+set.tabstop = 2
+set.autoindent = true
+set.wrap = true
+set.cursorline = true
+
+
+-- test
 
