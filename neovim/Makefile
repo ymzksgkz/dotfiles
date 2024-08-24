@@ -1,16 +1,16 @@
 .ONESHELL:
 	SHELL := /bin/bash
 
-ENV_NAME ?= $(NVIM_CUSTOM_ENV_NAME)
+GIT_USER_NAME ?= $(git config user.name)
 
 
 .PHONY: install
 install:
-	sh ./script/install.sh $(ENV_NAME)
+	sh ./script/install.sh $(GIT_USER_NAME)
 
 .PHONY: uninstall
 uninstall:
-	sh ./script/uninstall.sh $(ENV_NAME)
+	sh ./script/uninstall.sh $(GIT_USER_NAME)
 
 .PHONY: reinstall
 reinstall: ## TEST

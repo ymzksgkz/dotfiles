@@ -5,9 +5,7 @@ make install
 
 ## How to use
 ```bash
-export NVIM_CUSTOM_ENV_NAME='your_custom_env_name'
-
-alias vim="NVIM_APPNAME=$NVIM_CUSTOM_ENV_NAME nvim"
+alias vim="NVIM_APPNAME=$(git config user.name) nvim"
 nvim your_file_name
 ```
 
