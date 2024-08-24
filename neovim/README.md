@@ -5,7 +5,7 @@ make install
 
 ## How to use
 ```bash
-alias vim="NVIM_APPNAME=$(git config user.name) nvim"
+alias vim="NVIM_APPNAME=nvim_$(git config user.name) nvim"
 nvim your_file_name
 ```
 

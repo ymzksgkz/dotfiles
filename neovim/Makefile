@@ -1,19 +1,20 @@
 .ONESHELL:
 	SHELL := /bin/bash
 
-GIT_USER_NAME ?= $(git config user.name)
+GIT_USER_NAME ?= $(shell git config user.name)
 
 
 .PHONY: install
 install:
-	sh ./script/install.sh $(GIT_USER_NAME)
+	sh ./script/install.sh nvim_$(GIT_USER_NAME)
 
 .PHONY: uninstall
 uninstall:
-	sh ./script/uninstall.sh $(GIT_USER_NAME)
+	echo $(GIT_USER_NAME)
+	sh ./script/uninstall.sh nvim_$(GIT_USER_NAME)
 
 .PHONY: reinstall
-reinstall: ## TEST
+reinstall:
 	$(MAKE) uninstall
 	$(MAKE) install
 
