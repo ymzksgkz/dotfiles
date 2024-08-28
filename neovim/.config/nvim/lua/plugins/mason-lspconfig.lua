@@ -4,8 +4,12 @@ return {
     require("mason-lspconfig").setup({
       -- nvim の設定を再読み込みした時に自動でインストールするLSPサーバ
       ensure_installed = {
+        -- lsp list
+        -- https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file#available-lsp-servers
         "tsserver",
         "lua_ls",
+        "terraformls",
+        "tflint"
       }
     })
 
