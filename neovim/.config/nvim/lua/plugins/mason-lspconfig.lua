@@ -6,7 +6,7 @@ return {
       ensure_installed = {
         -- lsp list
         -- https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file#available-lsp-servers
-        "tsserver",
+        "deno",
         "lua_ls",
         "terraformls",
         "tflint"
