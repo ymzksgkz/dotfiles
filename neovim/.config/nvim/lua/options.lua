@@ -32,6 +32,3 @@ set.autoindent = true
 set.wrap = true
 set.cursorline = true
 
-
--- test
-
