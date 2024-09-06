@@ -4,10 +4,6 @@ vim.api.nvim_set_keymap('n', '<C-e>', '$', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<C-a>', '<C-o>^', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<C-e>', '<C-o>$', { noremap = true, silent = true })
 
--- Ctrl + k で行削除。
-vim.api.nvim_set_keymap('n', '<C-k>', 'd$', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('i', '<C-k>', '<C-o>d$', { noremap = true, silent = true })
-
 -- Ctrl + f/b/p/n でカーソル移動。
 vim.api.nvim_set_keymap('i', '<C-f>', '<Right>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<C-b>', '<Left>', { noremap = true, silent = true })
