@@ -19,7 +19,6 @@ return {
       end
       vim.api.nvim_set_keymap("n", "<leader>lag", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
 
-      
       -- lazydocker(\+lad)
       local lazydocker = Terminal:new({
         cmd = "lazydocker",
