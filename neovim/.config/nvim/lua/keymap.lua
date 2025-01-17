@@ -12,4 +12,5 @@ vim.api.nvim_set_keymap('i', '<C-n>', '<Down>', { noremap = true, silent = true 
 
 -- Ctrl + k でその行のカーソル位置より後ろを削除
 vim.api.nvim_set_keymap('n', '<C-k>', 'd$', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<C-k>', '<C-o>d$', { noremap = true, silent = true })
 
