@@ -1,3 +1,8 @@
+## Get Neovim
+```bash
+brew install neovim
+```
+
 ## Install
 ```bash
 make install
